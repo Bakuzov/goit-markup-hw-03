@@ -18,6 +18,8 @@
 }
 .size {
     width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1,h2,h3,h4,p { 
     margin: 0;
@@ -45,12 +47,7 @@ body {
     font-style: normal;
     
 }
-.section {
-    
-    padding-top: 94px;
-    padding-bottom: 94px;
 
-}
 
 .section-title-list {
     font-weight: 700;
@@ -67,6 +64,12 @@ body {
     margin-right: auto;
     width: 1200px;
     padding: 0 15px;
+}
+.section {
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+
 }
 
 /*  HEADER  */
@@ -129,10 +132,15 @@ body {
 .header-container {
     display: flex;
 }
-
-
 .header-mail {margin-right: 50px;}
-
+.container-footer {
+    display: flex;
+    flex-direction: column;
+}
+.item-footer {
+    margin-bottom: 9px;
+    /* padding-bottom: 9px; */
+}
 
 /*  HERO  */
 .hero{
@@ -236,6 +244,7 @@ margin-right: auto;
 .section-team {
     background-color: var(--light2-bg-color);
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section-title-list {
@@ -280,9 +289,16 @@ margin-right: auto;
 }
 
 .logo-footer {
-    display: inline-block;
     color: var(--accent-color);
     margin-top: 60px;
+    margin-bottom: 20px;
+    font-family:var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    outline: 1px solid #ca2727;
 }
 .logo-span-w {
     color: var(--header-bg-color);
@@ -298,17 +314,30 @@ margin-right: auto;
 .text{
     color: var(--secondary-text-color);
 } 
+.footer-addres {
+    margin-bottom: 9px;
+}
 .link-footer {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
+}
+.list-footer {
+    padding-bottom: 60px;
 }
 
 
-             /*Портфолио*/
+
+             /*Страница Портфолио*/
+
+.section-title-list {
+    display: none;
+}
 .modal-button {
+    padding:6px 22px ;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -329,14 +358,14 @@ margin-right: auto;
 }
 
 .portfolio-list {
-    background: var(--light1-bg-color);
-    border: 1px solid #eeeeee;
+    background: var(--header-bg-color);
+    
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.div-list-work {
-    border: 1px solid #ececec;
-}
+
 
 .employees-list-name-portfolio {
     font-weight: 700;
@@ -344,4 +373,42 @@ margin-right: auto;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primery-text-color);
+    margin-bottom: 4px; 
 }
+.ection-item-button {
+    display: flex;
+}
+.section-item-btn {
+    margin-right: 8px;
+    
+}
+.section-list-button {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 34px;
+    /* flex-wrap: wrap;
+    align-items: center;  */
+
+}
+.portfolio {
+    margin-top: 94px;
+}
+.employees-item-ptojekt {
+    margin-right: 30px;
+}
+.employees-item-ptojekt:nth-child(3n) {
+    margin-right: 0px;
+}
+.div-list-work {
+    margin: 20px 24px;
+}
+.position-portfolio {
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.03em;
+color: var(--secondary-text-color);
+}
+
+
+
