@@ -432,5 +432,4 @@ color: var(--secondary-text-color);
 .employees-list-img:hover {
     transform: scale(0.97);
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
-    
 }
